@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Task and Project Tracker</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Public+Sans:wght@400;600&display=swap">
+<link rel="stylesheet" href="sample.css">
+</head>
+<body>
+<nav class="topbar" aria-label="Sample navigation"><a href="../work.html#documents">← Back to my work</a><span class="docno">ADM-02 · <a href="downloads/ADM-02_Task-and-Project-Tracker.xlsx" download>Download the .xlsx</a></span></nav>
+<p class="demo" role="note"><strong>Demonstration Project.</strong> Created by Lizziewin Otero to show administrative skills. The organization, people, and figures are fictional.</p>
+
+<article class="page">
+<header class="letterhead"><div class="org">Brightwater Community Learning Center<small>Fictional organization · created for portfolio demonstration</small></div><div class="docno">PRJ-SHAREDRIVE<br>Tracker · as of 18 Oct 2026</div></header>
+<h1>Task and Project Tracker</h1>
+<p class="sub">Project: move all office files to one shared cloud drive, plus related October–November tasks.</p>
+<dl class="meta">
+<dt>Tasks</dt><dd>10 total · 2 done · 3 in progress · 1 overdue</dd>
+<dt>Project lead</dt><dd>Admin Assistant</dd>
+</dl>
+<div class="table-wrap"><table><thead><tr><th>ID</th><th>Task</th><th>Owner</th><th>Priority</th><th>Start</th><th>Due</th><th>Status</th><th class=num>Progress</th></tr></thead><tbody><tr><td>T-01</td><td>Draft shared-drive folder structure</td><td>Admin Assistant</td><td>High</td><td>2026-10-05</td><td>2026-10-14</td><td><span class="pill ok">Done</span></td><td class=num>100%</td></tr><tr><td>T-02</td><td>Write file-naming guide (1 page)</td><td>Admin Assistant</td><td>High</td><td>2026-10-08</td><td>2026-10-16</td><td><span class="pill ok">Done</span></td><td class=num>100%</td></tr><tr><td>T-03</td><td>Collect files from staff laptops</td><td>M. Santos</td><td>Medium</td><td>2026-10-12</td><td>2026-10-23</td><td><span class="pill warn">In progress</span></td><td class=num>60%</td></tr><tr><td>T-04</td><td>Set folder permissions for student records</td><td>A. Reyes</td><td>High</td><td>2026-10-15</td><td>2026-10-21</td><td><span class="pill warn">In progress</span></td><td class=num>40%</td></tr><tr><td>T-05</td><td>Get venue quotes for learners' showcase</td><td>J. Dela Cruz</td><td>Medium</td><td>2026-10-08</td><td>2026-10-16</td><td><span class="pill bad">Overdue</span></td><td class=num>50%</td></tr><tr><td>T-06</td><td>Send November tutor schedule</td><td>R. Lim</td><td>Medium</td><td>2026-10-14</td><td>2026-10-20</td><td><span class="pill plain">Not started</span></td><td class=num>0%</td></tr><tr><td>T-07</td><td>Prepare Q3 attendance summary</td><td>M. Santos</td><td>High</td><td>2026-10-09</td><td>2026-10-23</td><td><span class="pill warn">In progress</span></td><td class=num>70%</td></tr><tr><td>T-08</td><td>Train staff on the shared drive (30 min)</td><td>Admin Assistant</td><td>Medium</td><td>2026-10-26</td><td>2026-10-30</td><td><span class="pill plain">Not started</span></td><td class=num>0%</td></tr><tr><td>T-09</td><td>Archive 2024 paper records</td><td>Admin Assistant</td><td>Low</td><td>2026-10-19</td><td>2026-11-06</td><td><span class="pill plain">Not started</span></td><td class=num>0%</td></tr><tr><td>T-10</td><td>Order printed certificates for showcase</td><td>J. Dela Cruz</td><td>Low</td><td>2026-11-09</td><td>2026-11-27</td><td><span class="pill plain">Not started</span></td><td class=num>0%</td></tr></tbody></table></div>
+<h2>How the spreadsheet works</h2>
+<ul>
+<li><strong>Status</strong> and <strong>Priority</strong> use dropdown lists, so entries stay consistent.</li>
+<li>A <strong>Days left</strong> column counts down to the due date with a formula, and turns red when a task is past due and not done.</li>
+<li>A <strong>Summary</strong> sheet counts tasks by status and owner with <code>COUNTIF</code> and <code>COUNTIFS</code>, so the totals update by themselves.</li>
+<li>The header row is frozen and filters are on, so the list can be sorted by owner or due date.</li>
+</ul>
+<p><a class="download" href="downloads/ADM-02_Task-and-Project-Tracker.xlsx" download>Download the .xlsx template</a></p>
+</article>
+
+</body>
+</html>

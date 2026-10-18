@@ -1,91 +1,55 @@
-# Lizziewin Otero — Portfolio Website
+# Lizziewin Otero — Virtual Assistant Website
 
-A plain HTML, CSS, and JavaScript website. There is nothing to install and no build step, so it runs anywhere and is easy to edit.
+Plain HTML, CSS, and JavaScript. No installs, no build step.
 
-## What's in the folder
+## Pages
 
-```
-lizziewin-portfolio/
-├── index.html                 ← the main page (all sections A–F)
-├── assets/
-│   ├── css/styles.css         ← colors, fonts, layout
-│   ├── js/main.js             ← mobile menu and small animations
-│   └── img/work/              ← put your design images here
-└── samples/                   ← the 7 administrative demonstration projects
-    ├── meeting-agenda-minutes.html      (ADM-01)
-    ├── task-tracker.html                (ADM-02)
-    ├── weekly-schedule.html             (ADM-03)
-    ├── email-correspondence.html        (ADM-04)
-    ├── records-tracker.html             (ADM-05)
-    ├── information-brief.html           (ADM-06)
-    ├── quarterly-report.html            (ADM-07)
-    ├── sample.css
-    └── downloads/                       (the 3 Excel templates)
-```
+| File | Page |
+|---|---|
+| `index.html` | Home |
+| `about.html` | About, experience, results and achievements, tools |
+| `services.html` | Services and how working together works |
+| `work.html` | Design gallery, Facebook page case studies, practice documents |
+| `contact.html` | Email button, copy-email button, links |
+| `documents/` | The 7 practice admin documents and 3 Excel templates |
+| `assets/img/` | Your photo, design samples, and Facebook cover images |
 
-## View it on your computer
+## Preview on your computer
 
-Double-click `index.html`. It opens in your browser. That's all.
+Unzip the folder and double-click `index.html`.
 
-(Optional, closer to how it works online: open a terminal in this folder and run `python -m http.server 8000`, then go to http://localhost:8000.)
+## Common edits
 
-## Replace the placeholders
+Open any `.html` file in a text editor (VS Code is free).
 
-Open `index.html` in any text editor (VS Code is free and easy). Search for `EDIT:` and `[` to find every spot to fill in.
+- **Change text:** find the words and type over them. Don't delete the tags around them (`<p>`, `</p>`).
+- **Change your email:** search all files for `oterolizziewin@gmail.com` and replace it.
+- **Add a design:** save the image in `assets/img/work/`, then in `work.html` copy one `<figure class="piece" ...>` block and change the file name and caption. `data-cat` decides which filter shows it: `social`, `events`, `publications`, `infographics`, or `branding` (use several, separated by spaces).
+- **Update follower counts:** they appear in `work.html` (the two page cards) and `about.html` (the combined number, 769).
 
-| What | Where in `index.html` | What to do |
-|---|---|---|
-| Email | Contact section | Replace `[your professional email]` with your email. To make it clickable: `<a href="mailto:you@example.com">you@example.com</a>` |
-| LinkedIn | Contact section | Replace `[your LinkedIn profile URL]` with `<a href="https://linkedin.com/in/yourname" target="_blank" rel="noopener">linkedin.com/in/yourname</a>` |
-| Other link | Contact section | Your GitHub, Behance, or delete the line |
-| PACLIC paper link | Writing & Research | Add the proceedings link when published |
-| Thesis link | Writing & Research | Link to the abstract or PDF, or delete the placeholder line |
-| Presentations / writing samples | Writing & Research | Fill in the two "slot" blocks; copy a block to add more, or delete them |
-| Design images | Graphic Design section | See below |
+## Publish free with GitHub Pages
 
-### Adding your design work
-
-1. Export images from Canva as JPG (about 1200 px wide is enough).
-2. Save them in `assets/img/work/`, for example `assets/img/work/magazine-spread.jpg`.
-3. In `index.html`, replace the placeholder line, for example
-   `<div class="frame"><span>Add image: publication layout</span></div>`
-   with
-   `<div class="frame"><img src="assets/img/work/magazine-spread.jpg" alt="Magazine spread for [organization name]"></div>`
-4. Update the caption below it to name the actual piece.
-
-Only show work you are allowed to share publicly.
-
-### Editing the sample documents
-
-The samples are in `samples/`. They are labeled **Demonstration Project** and use a fictional organization, so they are honest to show as-is. Read through them once so you can talk about them in an interview, and change anything you'd write differently.
-
-## Publish it free with GitHub Pages
-
-1. Create a free account at https://github.com.
+1. Go to https://github.com and create a free account. Pick your username carefully. It becomes part of your website address.
 2. Click **+** (top right) → **New repository**.
-   - Name it `yourusername.github.io` (use your exact GitHub username) to get the address `https://yourusername.github.io`.
-   - Set it to **Public** and click **Create repository**.
-3. On the new repository page, click **uploading an existing file**.
-4. Open the `lizziewin-portfolio` folder on your computer, select **everything inside it** (not the folder itself), and drag it into the upload area. Folders upload too.
-5. Click **Commit changes**.
-6. Go to **Settings → Pages**. Under "Build and deployment", set Source to **Deploy from a branch**, Branch to **main** and folder **/ (root)**, then **Save**.
-7. Wait 1–2 minutes and open `https://yourusername.github.io`.
+   - **Repository name:** `yourusername.github.io` (your exact username). This gives you the address `https://yourusername.github.io`.
+   - Set it to **Public**, then click **Create repository**.
+3. On the empty repository page, click **uploading an existing file**.
+4. Unzip `lizziewin-va.zip`. Open the `lizziewin-va` folder, select **everything inside it** (`index.html`, `about.html`, the `assets` and `documents` folders, and so on), and drag it all into the upload box.
+5. Scroll down and click **Commit changes**.
+6. Go to **Settings** → **Pages** (left menu). Under **Build and deployment**:
+   - Source: **Deploy from a branch**
+   - Branch: **main**, folder **/ (root)** → **Save**
+7. Wait 1–3 minutes, then open `https://yourusername.github.io`.
 
-To update the site later: open the repository, click a file, click the pencil icon to edit, then **Commit changes**. Or upload a new version of the file with **Add file → Upload files**.
+**Already used `yourusername.github.io` for the admin portfolio?** Name this repository something else, like `va`. Its address becomes `https://yourusername.github.io/va/`.
 
-**For job applications** you can now give two links:
+### Updating later
 
-- Portfolio: `https://yourusername.github.io`
-- GitHub: `https://github.com/yourusername`
+Open the repository, click the file, click the pencil icon, edit, then **Commit changes**. To replace images or many files, use **Add file → Upload files** and upload the new versions with the same names. The site updates in a minute or two.
 
-### Other free options
+## Before you share the link
 
-- **Netlify Drop** (https://app.netlify.com/drop): drag the folder onto the page and get a link in seconds.
-- **Cloudflare Pages**: similar to Netlify, connected to GitHub.
-
-## Before you send the link
-
-- [ ] All `[placeholder]` text replaced or removed
-- [ ] Opened the site on your phone
-- [ ] Clicked every "View document" and "Download .xlsx" button
-- [ ] Design images added (or the section trimmed to what you have)
+- [ ] Open every page on your phone
+- [ ] Click **Email me** and check it opens an email to you
+- [ ] Click each portfolio image, filter, and document
+- [ ] Check the follower counts are still current
